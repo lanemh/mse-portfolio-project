@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  db:
+    build: .
+    volumes:
+      - dbdata:/var/lib/postgresql/data/
+
+volumes:
+  dbdata:
